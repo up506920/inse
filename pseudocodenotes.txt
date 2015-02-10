@@ -1,0 +1,28 @@
+Code plan:
+
+To render a gantt chart
+Take all tasks from DB, each task has a name, start date and end date.
+Order tasks by end date.
+Render task as bar on calendar (length of bar = end date-start date, turn into integer and then use as pixel width, height constant)
+For each task in array tasks: Move down and render next task.
+
+
+To take saved projects:
+
+Choose user - click on the chart type, choose either new or the saved project
+
+So each project will have a set number of tasks
+
+DB:
+
+Project
+ProjectID, ProjectName, ChartTypeID, UserID
+
+Task
+TaskID, TaskName, StartDate, EndDate, ProjectID
+
+ChartType
+ChartTypeID, ChartName 
+
+User
+UserID, Username  
