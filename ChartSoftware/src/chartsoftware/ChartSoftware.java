@@ -10,12 +10,19 @@ package chartsoftware;
  * @author Matt
  */
 public class ChartSoftware {
-
+private boolean userHasGantt;
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
     }
     
+    public void ganttClick()
+    {
+        if(userHasGantt == false)
+        {
+            gantt = new Gantt();
+                }
+    }
 }
